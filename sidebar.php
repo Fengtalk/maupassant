@@ -42,7 +42,7 @@
     <section class="widget">
 		<h3 class="widget-title"><?php _e('归档'); ?></h3>
         <ul class="widget-list">
-            <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=F Y')
+            <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y 年 n 月')
             ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
         </ul>
 	</section>
