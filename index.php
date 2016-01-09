@@ -19,7 +19,7 @@
 					</h2>
 				</header>
 				<date class="post-meta">
-					<?php $this->date('F j, Y'); ?>
+					<?php $this->date('Y 年 n 月 j 日'); ?>
 				</date>
 				<div class="post-content">
 					<?php $this->content('阅读剩余部分 -'); ?>
