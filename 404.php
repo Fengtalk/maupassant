@@ -6,9 +6,9 @@
 <head>
   <meta charset="<?php $this->options->charset(); ?>" />
 	<meta name="viewport" content="width=device-width,user-scalable=no">
-  <?php if ($this->is('index')): ?><title>Cho's</title>
+  <?php if ($this->is('index')): ?><title><?php $this->options->title(); ?></title>
 	<?php else: ?>
-	<title><?php $this->archiveTitle('.', '', ' - '); ?>Cho's</title>
+	<title><?php $this->archiveTitle('.', '', ' - '); ?><?php $this->options->title(); ?></title>
 	<?php endif; ?>
 	<!--[if lt IE 9]>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('javascript/html5shiv.js'); ?>">
