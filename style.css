@@ -103,6 +103,8 @@ pre {
     overflow:auto;
     background: none;
     border: 1px solid #ddd;
+    word-wrap: break-word;
+    word-break: normal;
 }
 blockquote {
     margin:2em 1.5em;
@@ -110,14 +112,14 @@ blockquote {
     border-left:4px solid #ddd;
     color:#777;
 }
-blockquote:first-letter {
+/*blockquote:first-letter {
     font-size:2.5em;
     line-height: 1.15;
     padding: 0 7px 0 0;
     color: #666;
     font-weight:bolder;
     float:left;
-}
+}*/
 h1, h2, h3 {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -282,7 +284,7 @@ textarea {
     max-height: 320px;
 }
 .post-content pre code ,.comment-content pre code {
-    padding: 1.5em 2em;
+    padding: 0 2em;
 }
 .post-content p code, .comment-content p code {
     display:inline;
@@ -295,6 +297,8 @@ textarea {
 }
 .post-content img {
     padding:1em 0;
+    display: block;
+    margin: 0 auto;
 }
 .post-content ul {
     overflow: auto;
@@ -742,3 +746,4 @@ img.alignright {
 .about{
     width: 100%;
 }
+code {display:inline-block;}
